@@ -1,15 +1,13 @@
-header.header-primary
-  .logo
-    = link_to '/'
-      = image_tag 'logo.svg', alt: 'Kaldi'
+header
 
-  a.nav-button href='#'
-    = image_tag 'nav-open.svg', class: 'open'
-    = image_tag 'nav-close.svg', class: 'close'
-
-  nav.navigation
-    ul
+  nav
+    ul.nav.justify-content-end
       - data.settings.navigation.nav_items.each do | nav_item |
-        li
-          = nav_link nav_item.label, nav_item.path
+        li.nav-item
+          = nav_link nav_item.label, nav_item.path, class: "nav-link"
 
+
+  .container-fluid
+    .row
+      .col-md-6
+        img.img-responsive.header.ml-md-35 src=data.pages.home.hero.image
