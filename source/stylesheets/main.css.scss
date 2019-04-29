@@ -1,5 +1,23 @@
+body {
+  font-family: 'Scope One', sans-serif;
+  letter-spacing: .5px;
+}
+
+.title-font {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.heading-font {
+  font-family: 'Trocchi', serif;
+}
+
 .header {
-  max-height: 40vh;
+  min-height: 50vh;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .ml-md-35 {
